@@ -6,6 +6,9 @@ The metadata repository is initialized via the configuration that is defined
 as part of the resource-catalogue.  The registrar queries the backend to
 determine whether an incoming item has already been registered.
 
+Depending on the input type/scheme, the resource-catalogue will process the
+supported schemes into ISO 19115 metadata for ingest in support of discovery.
+
 If the item is a product, both the `MTD_MSIL2A.xml` and `INSPIRE.xml` files
 are processed and used as input to generate an ISO 19115-2 document with
 spatial and temporal extents, platform and instrument information, as well as
@@ -16,7 +19,14 @@ input to generate an ISO 19115-2 document with spatial and temporal extents,
 platform and instrument information, as well as links to all results generated
 as a result of the process.
 
-In both cases, if the metadata record already exists in the
+If the item is a CWL definition, the CWL is processed into an ISO 19115 document.
+
+If the item is a STAC Item, the CWL is processed into an ISO 19115 document.
+
+If the item is a STAC Catalog, the Catalog is read for any STAC items which are
+then processed into their equivalent ISO 19115 documents.
+
+In all cases, if the metadata record already exists in the
 resource-catalogue, and if overwriting is enabled, the record will be
 sent as an update.  Else, the record is sent as new metadata.
 

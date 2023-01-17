@@ -11,7 +11,7 @@ and search by downstream applications.
 
 === Software Reuse and Dependencies
 
-This service uses the COTS link:pycsw[https://pycsw.org] product with custom
+This service uses the free and open source link:pycsw[https://pycsw.org] product with custom
 configuration.
 
 === Interfaces
@@ -21,7 +21,7 @@ This service provides the following interfaces:
 . OGC API - Records - Part 1.0, Core, version 1.0
 . OGC Catalogue Service for the Web, version 3.0.0
 . OGC Catalogue Service for the Web, version 2.0.2
-. Spatio Temporal Asset Catalog (STAC)
+. Spatio Temporal Asset Catalog (STAC) API, version 1.0.0-rc1
 . OpenSearch with Extensions for Geo, Time and Earth Observation
 . Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)
 . Search/Retrieval via URL (SRU) search protocol
@@ -48,12 +48,21 @@ via the interfaces described above.
 
 The resource-catalogue supports the following item schemes:
 
-* Sentinel-2 L2A: This expects an unpacked Sentinel-2 Level 2A SAFE package as
+* Sentinel-2: This expects an unpacked Sentinel-2 Level 2A or Level 1C SAFE package and a STAC item (JSON) as
   the path input. It will parse all product and granule related metadata and
   generate an ISO 19115-2 document of the product as a single item
+* Landsat: This scheme expects a Landsat scene package and a STAC item (JSON). It will parse all product related metadata and
+  generate an ISO 19115-2 document of the product as a single item
 * STAC-Catalog: This scheme requires a path to a directory containing at least
-  one STAC item  file that will be read and parsed for metadata, generating an
-  ISO 19115-2 dodument of the processing result as a single item
+  one STAC item file that will be read and parsed for metadata, generating an
+  ISO 19115-2 document of the processing result as a single item
+* STAC-Item: This scheme requires a STAC item file that will be read and parsed for metadata, generating an
+  ISO 19115-2 document of the item
+* ISO 19115: This scheme expects an ISO 19115 document (encoded as ISO 19139 XML)
+* Common Workflow Language (CWL): This scheme expects a CWL document as input. It will parse all included metadata (schema.org) and
+  generate an ISO 19115-2 document of the product as a single item
+* Application Deployment and Execution Service (ADES): This scheme expects OGC API - Processes (OAProc) ADES service definition / landing page (JSON) as input. It will parse all included metadata (schema.org) and
+  generate an ISO 19115-2 document of the service as a single item
 
 === Applicable Resources
 

@@ -21,6 +21,7 @@ The following acronyms and abbreviations have been used in this report.
 | EMS | Execution Management Service
 | EO | Earth Observation
 | EP | Exploitation Platform
+| FOSS | Free and Open Source
 | FUSE | Filesystem in Userspace
 | GeoXACML | Geo-specific extension to the XACML Policy Language
 | IAM | Identity and Access Management
@@ -29,6 +30,7 @@ The following acronyms and abbreviations have been used in this report.
 | K8s | Kubernetes
 | KVP | Key-value Pair
 | M2M | Machine-to-machine
+| OAProc | OGC API - Processes
 | OARec | OGC API - Records
 | OGC | Open Geospatial Consortium
 | PDE | Processor Development Environment
