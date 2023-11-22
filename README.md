@@ -21,22 +21,22 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/EOEPCA/template-svce">
+  <a href="https://github.com/EOEPCA/rm-resource-catalogue">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">template-service</h3>
+  <h3 align="center">EOEPCA Resource Catalogue</h3>
 
   <p align="center">
-    Template for developing an EOEPCA Service
+    This repository includes the documentation of the EOEPCA Resource Catalogue
     <br />
-    <a href="https://github.com/EOEPCA/template-svce"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/EOEPCA/rm-resource-catalogue"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://github.com/EOEPCA/template-svce">View Demo</a>
+    <a href="https://resource-catalogue.demo.eoepca.org/">View Demo</a>
     ·
-    <a href="https://github.com/EOEPCA/template-svce/issues">Report Bug</a>
+    <a href="https://github.com/EOEPCA/rm-resource-catalogue/issues">Report Bug</a>
     ·
-    <a href="https://github.com/EOEPCA/template-svce/issues">Request Feature</a>
+    <a href="https://github.com/EOEPCA/rm-resource-catalogue/issues">Request Feature</a>
   </p>
 </p>
 
@@ -62,7 +62,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][screenshot1]](https://example.com)
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
@@ -195,4 +195,4 @@ Project Link: [https://github.com/EOEPCA/template-svce](https://github.com/EOEPC
 [license-shield]: https://img.shields.io/github/license/EOEPCA/template-svce.svg?style=flat-square
 [license-url]: https://github.com/EOEPCA/template-svce/blob/master/LICENSE
 [build-shield]: https://www.travis-ci.com/EOEPCA/template-svce.svg?branch=master
-[product-screenshot]: images/screenshot.png
+[screenshot1]: images/screenshot1.png
